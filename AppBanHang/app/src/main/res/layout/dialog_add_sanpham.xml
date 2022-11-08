@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvTitleDlg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_36sdp"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/_8sdp"
+        android:paddingLeft="@dimen/_8sdp"
+        android:text="Thêm mới sản phẩm"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15ssp" />
+
+    <ImageView
+        android:id="@+id/imvImageDlg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp"
+        android:src="@drawable/camera" />
+
+    <EditText
+        android:id="@+id/edtTenDlg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_6sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_marginRight="@dimen/_6sdp"
+        android:layout_marginBottom="@dimen/_3sdp"
+        android:background="@drawable/shape_bg_bovien_xam_trang_edit_text"
+        android:hint="Tên sản phẩm"
+        android:maxLength="255"
+        android:maxLines="3"
+        android:padding="@dimen/_8sdp"
+        android:textSize="@dimen/_13ssp" />
+
+    <requestFocus />
+
+    <EditText
+        android:id="@+id/edtGiaBanDlg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_36sdp"
+        android:layout_marginLeft="@dimen/_6sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_marginRight="@dimen/_6sdp"
+        android:layout_marginBottom="@dimen/_3sdp"
+        android:background="@drawable/shape_bg_bovien_xam_trang_edit_text"
+        android:hint="Giá bán"
+        android:inputType="number"
+        android:maxLength="20"
+        android:padding="@dimen/_8sdp"
+        android:textSize="@dimen/_13ssp" />
+
+    <EditText
+        android:id="@+id/edtDescDlg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_6sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_marginRight="@dimen/_6sdp"
+        android:layout_marginBottom="@dimen/_3sdp"
+        android:background="@drawable/shape_bg_bovien_xam_trang_edit_text"
+        android:hint="Mô tả sản phẩm"
+        android:maxLength="255"
+        android:padding="@dimen/_8sdp"
+        android:textSize="@dimen/_13ssp" />
+
+    <LinearLayout
+        android:id="@+id/llButtonDlg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_32sdp"
+        android:layout_marginLeft="@dimen/_6sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_marginRight="@dimen/_6sdp"
+        android:layout_marginBottom="@dimen/_6sdp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnCancelDlg"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:layout_marginRight="@dimen/_3sdp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_bg_bovien_button_xam"
+            android:text="Hủy bỏ"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp" />
+
+        <Button
+            android:id="@+id/btnConfirmDlg"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_bg_bovien_color_app"
+            android:text="Thêm mới"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp" />
+
+    </LinearLayout>
+
+</LinearLayout>

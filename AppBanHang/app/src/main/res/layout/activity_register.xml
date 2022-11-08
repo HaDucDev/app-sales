@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    app:hintEnabled="true">
+
+    <ImageView
+        android:id="@+id/imvImage"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tv_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imvImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="Đăng ký tài khoản"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/_18ssp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edtUserRegister"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_38sdp"
+        android:layout_below="@+id/tv_subtitle"
+        android:drawableLeft="@drawable/user"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:background="@drawable/et_custom"
+        android:hint="Tài khoản"
+        android:padding="@dimen/_8sdp"
+        android:textSize="@dimen/_15ssp">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/edtPassRegister"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_38sdp"
+        android:layout_below="@+id/edtUserRegister"
+        android:drawableLeft="@drawable/password"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_marginEnd="@dimen/_25sdp"
+        android:background="@drawable/et_custom"
+        android:hint="Mật khẩu"
+        android:inputType="textPassword"
+        android:padding="@dimen/_8sdp"
+        android:textSize="@dimen/_15ssp" />
+
+    <EditText
+        android:id="@+id/edtConfirmPassRegister"
+        android:drawableLeft="@drawable/password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_38sdp"
+        android:layout_below="@+id/edtPassRegister"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_marginEnd="@dimen/_25sdp"
+        android:background="@drawable/et_custom"
+        android:hint="Xác nhận mật khẩu"
+        android:inputType="textPassword"
+        android:padding="@dimen/_8sdp"
+        android:textSize="@dimen/_15ssp" />
+
+    <EditText
+        android:id="@+id/edtFullNameRegister"
+        android:drawableLeft="@drawable/user"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_38sdp"
+        android:layout_below="@+id/edtConfirmPassRegister"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_marginEnd="@dimen/_25sdp"
+        android:background="@drawable/et_custom"
+        android:hint="Họ và tên"
+        android:padding="@dimen/_8sdp"
+        android:textSize="@dimen/_15ssp" />
+
+    <EditText
+        android:id="@+id/edtPhoneRegister"
+        android:drawableLeft="@drawable/ic_baseline_phone_in_talk_24"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_38sdp"
+        android:layout_below="@+id/edtFullNameRegister"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_marginEnd="@dimen/_25sdp"
+        android:background="@drawable/et_custom"
+        android:hint="Số điện thoại"
+        android:inputType="number"
+        android:padding="@dimen/_8sdp"
+        android:textSize="@dimen/_15ssp" />
+
+    <EditText
+        android:id="@+id/edtEmailRegister"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_38sdp"
+        android:layout_below="@+id/edtPhoneRegister"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_marginEnd="@dimen/_25sdp"
+        android:background="@drawable/et_custom"
+        android:hint="Gmail:xxx@gmail.com/xxx@xx.x.x"
+        android:inputType="textEmailAddress"
+        android:padding="@dimen/_8sdp"
+        android:textSize="@dimen/_15ssp" />
+
+    <EditText
+        android:id="@+id/edtAddressRegister"
+        android:drawableLeft="@drawable/ic_baseline_bungalow_24"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_38sdp"
+        android:layout_below="@+id/edtEmailRegister"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_marginEnd="@dimen/_25sdp"
+        android:background="@drawable/et_custom"
+        android:hint="Address"
+        android:inputType="textEmailAddress"
+        android:padding="@dimen/_8sdp"
+        android:textSize="@dimen/_15ssp" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_36sdp"
+        android:layout_below="@id/edtAddressRegister"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_25sdp"
+        android:background="@drawable/shape_bg_bovien_color_app"
+        android:gravity="center"
+        android:text="Đăng ký"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14ssp" />
+
+</RelativeLayout>

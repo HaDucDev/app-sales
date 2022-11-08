@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffca28</color>
+    <color name="colorAccent">#ffca28</color>
+    <color name="colorPrimaryMo">#ffe082</color>
+    <color name="colorPrimaryDark">#c79a00</color>
+    <color name="colorPrimaryPress">#c79a00</color>
+
+    <color name="black">#000000</color>
+    <color name="blackMoMo">#777777</color>
+    <color name="white">#FFFFFF</color>
+    <color name="colorColumn">#e0e0e0</color>
+
+    <color name="black_mo_2">#B6B6B6</color>
+    <color name="black_mo_2Press">#A6A0A0</color>
+    <color name="colorItemClick">#EDEDED</color>
+
+    <color name="colorTextParent">#C4040503</color>
+    <color name="colorTextChild">#115D80</color>
+    <color name="colorGachChan">#f7f7f7</color>
+    <color name="colorGachChanDam">#EAEAEA</color>
+    <color name="colorButtonGreen">#1DA1F2</color>
+    <color name="button_unable">#cccccc</color>
+    <color name="colorVinID">#F84040</color>
+    <color name="colorVinIDPress">#E44343</color>
+    <color name="colorCam">#F57C00</color>
+    <color name="colorCamPress">#D36B00</color>
+    <color name="yellow">#FFC107</color>
+</resources>

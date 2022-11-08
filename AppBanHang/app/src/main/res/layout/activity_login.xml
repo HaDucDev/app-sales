@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tv_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/edt_uername_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:text="@string/app_name"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/_18ssp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edt_uername_login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_38sdp"
+        android:layout_above="@id/edt_password_login"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/et_custom"
+        android:drawableLeft="@drawable/user"
+        android:hint="Tài khoản"
+        android:inputType="textEmailAddress"
+        android:padding="@dimen/_8sdp"
+        android:textSize="@dimen/_15ssp">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/edt_password_login"
+        android:layout_width="match_parent"
+        android:drawableLeft="@drawable/password"
+        android:layout_height="@dimen/_38sdp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_marginEnd="@dimen/_25sdp"
+        android:background="@drawable/et_custom"
+        android:hint="Mật khẩu"
+        android:inputType="textPassword"
+        android:padding="@dimen/_8sdp"
+        android:textSize="@dimen/_15ssp" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_36sdp"
+        android:layout_below="@id/edt_password_login"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_25sdp"
+        android:background="@drawable/shape_bg_bovien_color_app"
+        android:gravity="center"
+        android:text="Đăng nhập"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14ssp" />
+
+    <TextView
+        android:id="@+id/tvRegisterAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_login"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:gravity="end"
+        android:text="Đăng ký tài khoản"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/_13ssp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/tvForgotPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvRegisterAccount"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:gravity="end"
+        android:text="Quên mật khẩu"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/_13ssp"
+        android:textStyle="italic" />
+</RelativeLayout>

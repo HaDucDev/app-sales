@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvItemsCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/llPrice"
+        android:layout_alignParentTop="true"
+        android:scrollbars="vertical" />
+
+    <TextView
+        android:id="@+id/tvGachChanCart"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/llPrice"
+        android:background="@color/colorItemClick" />
+
+    <LinearLayout
+        android:id="@+id/llPrice"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_above="@id/btnOrderCart"
+        android:layout_marginLeft="@dimen/_3sdp"
+        android:layout_marginRight="@dimen/_3sdp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:paddingStart="@dimen/_3sdp"
+            android:paddingLeft="@dimen/_3sdp"
+            android:text="Tổng tiền"
+            android:textColor="@color/colorTextParent"
+            android:textSize="@dimen/_13ssp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvTotalPriceCart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:paddingEnd="@dimen/_3sdp"
+            android:paddingRight="@dimen/_3sdp"
+            android:text="0"
+            android:textColor="@color/colorVinID"
+            android:textSize="@dimen/_13ssp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnOrderCart"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/_12sdp"
+        android:layout_marginRight="@dimen/_12sdp"
+        android:layout_marginBottom="@dimen/_6sdp"
+        android:background="@drawable/shape_bg_bovien_color_app"
+        android:text="Thanh toán"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_11ssp" />
+
+</RelativeLayout>
